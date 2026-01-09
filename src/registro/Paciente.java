@@ -18,7 +18,7 @@ public class Paciente {
 	- 18 o más → ADULTO
      */
     String nombre;
-    int documento;
+    String documento;
     int edad;
     String motivoConsulta;
     String telefono;
@@ -37,7 +37,7 @@ public class Paciente {
     }
 
     //Constructor
-    public Paciente(String nombre, int documento, int edad, String motivoConsulta, String telefono, String estado) {
+    public Paciente(String nombre, String documento, int edad, String motivoConsulta, String telefono) {
         this.nombre = nombre;
         this.documento = documento;
         this.edad = edad;
@@ -56,11 +56,11 @@ public class Paciente {
         this.nombre = nombre;
     }
 
-    public int getDocumento() {
+    public String getDocumento() {
         return documento;
     }
 
-    public void setDocumento(int documento) {
+    public void setDocumento(String documento) {
         this.documento = documento;
     }
 

@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Funciones {
 
-    public void menu() {
+    public void menu(Paciente p1, Paciente p2, Paciente p3, Paciente p4) {
+        
         int op;
         do {
             System.out.println("""
@@ -30,7 +31,7 @@ public class Funciones {
                     System.out.println("Ingrese el nombre del paciente");
                     String nombre = new Scanner(System.in).nextLine();
                     System.out.println("Ingrese el documento del paciente");
-                    int documento = new Scanner(System.in).nextInt();
+                    String documento = new Scanner(System.in).nextLine();
                     System.out.println("Ingrese edad del paciente");
                     int edad = new Scanner(System.in).nextInt();
                     System.out.println("Ingrese el motivo de la consulta");
@@ -38,7 +39,7 @@ public class Funciones {
                     System.out.println("Ingrese telefono del paciente \n¡¡Atencion!!: Tenga en ceunta que si tiene mas de un telefono debe escribirlo separado por comas");
                     String telefono = new Scanner(System.in).nextLine();
                     if (p1 == null) {
-                        Paciente p1=new Paciente(nombre);
+                        p1=new Paciente(nombre,documento,edad,motivoConsulta,telefono);
                     } else {
                         if (p2 == null) {
                         } else {

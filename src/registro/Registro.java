@@ -65,7 +65,8 @@ public class Registro {
         Paciente p2 = null;
         Paciente p3 = null;
         Paciente p4 = null;
-        
+        Funciones f=new Funciones();
+        f.menu(p1, p2, p3, p4);
         
         
         
