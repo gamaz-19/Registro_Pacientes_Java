@@ -1,9 +1,71 @@
 package registro;
 
+
+// Clase principal del programa
+// Desde aquí se inicia la ejecución de toda la aplicación
 public class Registro {
 
+    
+    // Método principal (main), todo se empieza a ejecutar desde aqui
     public static void main(String[] args) {
-        /*
+        
+           
+        // Ejemplos de pacientes creados manualmente, se comentaron por que se agrgan desde la consola ahora
+//        Paciente P1=new Paciente("Carlos Torres",1234,25,"Dolor de cabeza",3123,"disponible");
+//        Paciente P2=new Paciente("Camilo Torres",1345,12,"Herido de bala",3234,"atendido");
+//        Paciente P3=new Paciente("Carla Torres",1456,38,"Dolor de rodilla",3345,"disponible");
+//        Paciente P4=new Paciente("Carlo Torres",1567,8,"Dolor de muela",3456,"registrado");
+
+
+        // aqui se van a guardar los pacientes registrado
+Clinica clinica = new Clinica();
+        
+        // esto se encarga del menu y de la  "interaccion"? con el usuario
+Funciones f = new Funciones();
+        
+        
+        // como el nombre indica, se llama el menuprincipal del programa, y se le envia a los otros 3 archivos, es como un "conector"?
+f.menu(clinica);
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
         REGISTRO BÁSICO DE PACIENTES (CONSOLA)
         Una clínica pequeña necesita una aplicación de consola para registrar pacientes que llegan a consulta general.
         Por limitaciones técnicas, el sistema no usa base de datos ni listas, y solo puede manejar 4 pacientes al mismo tiempo, representados mediante objetos fijos definidos en el código (p1, p2, p3, p4).
@@ -55,21 +117,3 @@ public class Registro {
                 - validación de datos
                 - lógica de negocio simple
          */
-
-//        Paciente P1=new Paciente("Carlos Torres",1234,25,"Dolor de cabeza",3123,"disponible");
-//        Paciente P2=new Paciente("Camilo Torres",1345,12,"Herido de bala",3234,"atendido");
-//        Paciente P3=new Paciente("Carla Torres",1456,38,"Dolor de rodilla",3345,"disponible");
-//        Paciente P4=new Paciente("Carlo Torres",1567,8,"Dolor de muela",3456,"registrado");
-//        
-        Paciente p1 = null;
-        Paciente p2 = null;
-        Paciente p3 = null;
-        Paciente p4 = null;
-        Funciones f=new Funciones();
-        f.menu(p1, p2, p3, p4);
-        
-        
-        
-    }
-
-}
