@@ -23,7 +23,7 @@ public class Registro {
         menu.iniciar();
     }
 
-
+//
     // las variables que permiten guardar pacientes, con un ,maximo de 4
     private Paciente p1;
     private Paciente p2;

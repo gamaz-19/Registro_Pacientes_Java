@@ -1,5 +1,5 @@
 package vista;
-
+//
 import java.util.Scanner;
 import Controlador.Registro;
 import modelo.Paciente;

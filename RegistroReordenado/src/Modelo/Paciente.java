@@ -3,7 +3,7 @@ package modelo;
 
 public class Paciente {
 
-
+//
         //variables que guardan la informacion basica del paciente
 
     private String nombre;          
