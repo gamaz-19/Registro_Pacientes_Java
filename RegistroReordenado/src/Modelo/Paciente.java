@@ -1,3 +1,4 @@
+/*
 package modelo;
 
 
@@ -95,3 +96,5 @@ public class Paciente {
         this.estado = estado;
     }
 }
+
+*/
