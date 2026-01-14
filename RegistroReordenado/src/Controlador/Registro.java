@@ -1,4 +1,4 @@
-/*
+
 package Controlador;
 
 import vista.Menu;
@@ -112,4 +112,3 @@ public class Registro {
 
 }
 
-*/
